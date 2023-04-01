@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Models
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://huggingface.co/docs/transformers/model_doc/bert" target="_blank">BERT</a>
+        <a href="https://huggingface.co/openai-gpt" target="_blank">GPT3</a>
+        <a href="https://huggingface.co/microsoft/codebert-base" target="_blank">CodeBERT</a>
+      </div>
+    </div>
+    <a  href="https://nitk.acm.org/#/" target="_blank">About Us</a>
+  </div>
+  <title>NLP Automation ACM NITK</title>
+  <link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon">
+  <link rel="stylesheet" href="/static\main.css">
+
+  <!-- <a href="result.html" target="_blank">Submit</a> -->
+
+
+</head>
+
+<body>
+
+  <h1>NLP Automation</h1>
+
+  <form action="{{ url_for('home') }}" method="POST">
+    <textarea id="input-box" rows="10" name="txt" placeholder="Enter your text here"></textarea>
+
+    <div id="model-select">
+      <label for="model">Select an NLP model:</label>
+      
+      <select id="model" name="model">
+        <option value="bert">BERT</option>
+        <option value="gpt3">GPT3</option>
+        <option value="codebert">CodeBERT</option>
+        <!--option value="neunet">Custom Neural Net</option-->
+      </select>
+    </div>
+
+    <div>
+      <center>
+        <div>OR</div>
+      <br>
+      <br>
+      <div>
+       Go for <a href="input" target="_blank">Custom NeuNet</a>
+
+      </div>
+
+      </center>
+      
+    </div>
+    <br>
+    <br>
+    <br>
+    <center>    <input type="submit" value="SUBMIT">
+    </center>
+    <!-- <center style="background-color: rgb(8, 6, 1); font-weight: bold;"><a class="subbtn" href= "/result" target="_blank"> SUBMIT </a></center> -->
+    <!-- <button id="submit-btn" type="submit" onclick="window.location.href = 'result.html';">Submit</button> -->
+    <!-- <button onclick='result.html'>Submit</button> -->
+  </form>
+
+  <div class="hero">
+    <div class="small-img">
+      <img src="/static\image_part_001.jpg" alt="">
+
+    </div>
+    <div class="small-img">
+      <img src="/static\image_part_002.jpg" alt="">
+
+    </div>
+    <div class="small-img">
+      <img src="/static\image_part_003.jpg" alt="">
+
+    </div>
+    <div class="small-img">
+      <img src="/static\image_part_004.jpg" alt="">
+
+    </div>
+    <div class="small-img">
+      <img src="/static\image_part_005.jpg" alt="">
+
+    </div>
+    <div class="small-img">
+      <img src="/static\image_part_006.jpg" alt="">
+
+    </div>
+    <div class="small-img">
+      <img src="/static\image_part_007.jpg" alt="">
+
+    </div>
+    <div class="small-img">
+      <img src="/static\image_part_008.jpg" alt="">
+
+    </div>
+    <div class="small-img">
+      <img src="/static\image_part_009.jpg" alt="">
+
+
+    </div>
+
+    <div>
+
+    </div>
+</body>
+
+</html>
